@@ -48,7 +48,7 @@ in
 
 , buildBinpack ? false
 , buildDebug ? false
-, buildDoc ? true
+, buildDoc ? false
 , buildSimulator ? true
 , buildWithCCache ? false
 , numworks_model ? "n0110"

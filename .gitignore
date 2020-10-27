@@ -1,3 +1,6 @@
 result*
 credentials.nix
 logs.log
+doc
+omega/src.tar.gz
+omega/build.sh

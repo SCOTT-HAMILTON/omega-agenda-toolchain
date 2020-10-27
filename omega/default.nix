@@ -17,7 +17,7 @@
 
 , buildBinpack ? false
 , buildDebug ? false
-, buildDoc ? true
+, buildDoc ? false
 , buildSimulator ? true
 , buildWithCCache ? false
 , numworks_model ? "n0110"
@@ -41,8 +41,8 @@ stdenv.mkDerivation rec {
   src = fetchFromGitHub {
     owner = "SCOTT-HAMILTON";
     repo = "Omega";
-    rev = "c77bb191c688eef99b2618840356a062932b8759";
-    sha256 = "11681r1yl6rcv86bqycz48qn72v9g7l2i0mw75nhscgxc0wylm3f";
+    rev = "f857b6f644b48c95c74f8e02db4ad57cca6ec286";
+    sha256 = "0000000000000000000000000000000000000000000000000000";
     fetchSubmodules = true;
   };
 
