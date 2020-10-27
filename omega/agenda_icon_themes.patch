@@ -1,0 +1,29 @@
+Seulement dans a: .git
+diff -ur b/themes/icons.json a/themes/icons.json
+--- b/themes/icons.json	2020-10-26 18:17:00.573412674 +0100
++++ a/themes/icons.json	2020-09-13 19:11:28.000000000 +0200
+@@ -3,6 +3,7 @@
+     "apps/on_boarding/logo_icon.png" : "logo_icon.png",
+     
+     "apps/atom/atom_icon.png" : "apps/atom_icon.png",
++    "apps/agenda/agenda_icon.png" : "apps/agenda_icon.png",
+     "apps/calculation/calculation_icon.png" : "apps/calculation_icon.png",
+     "apps/code/code_icon.png" : "apps/code_icon.png",
+     "apps/external/external_icon.png" : "apps/external_icon.png",
+@@ -40,5 +41,14 @@
+     "apps/probability/images/normal_icon.png" : "probability/normal_icon.png",
+     "apps/probability/images/poisson_icon.png" : "probability/poisson_icon.png",
+     "apps/probability/images/student_icon.png" : "probability/student_icon.png",
+-    "apps/probability/images/uniform_icon.png" : "probability/uniform_icon.png"
++    "apps/probability/images/uniform_icon.png" : "probability/uniform_icon.png",
++
++    "apps/agenda/images/agenda_binomial_icon.png" : "agenda/agenda_binomial_icon.png",
++    "apps/agenda/images/agenda_uniform_icon.png" : "agenda/agenda_uniform_icon.png",
++    "apps/agenda/images/agenda_exponential_icon.png" : "agenda/agenda_exponential_icon.png",
++    "apps/agenda/images/agenda_normal_icon.png" : "agenda/agenda_normal_icon.png",
++    "apps/agenda/images/agenda_focused_binomial_icon.png" : "agenda/agenda_focused_binomial_icon.png",
++    "apps/agenda/images/agenda_focused_uniform_icon.png" : "agenda/agenda_focused_uniform_icon.png",
++    "apps/agenda/images/agenda_focused_exponential_icon.png" : "agenda/agenda_focused_exponential_icon.png",
++    "apps/agenda/images/agenda_focused_normal_icon.png" : "agenda/agenda_focused_normal_icon.png"
+ }
+Seulement dans a/themes/themes/local/omega_dark/apps: agenda_icon.png
