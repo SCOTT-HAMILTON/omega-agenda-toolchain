@@ -42,7 +42,7 @@ stdenv.mkDerivation rec {
     owner = "SCOTT-HAMILTON";
     repo = "Omega";
     rev = "f857b6f644b48c95c74f8e02db4ad57cca6ec286";
-    sha256 = "0000000000000000000000000000000000000000000000000000";
+    sha256 = "0i8d450gcw9vqci83gn65x62kmpfjawlfy9639nm4k9zi5ybza1h";
     fetchSubmodules = true;
   };
 
