@@ -43,6 +43,8 @@ in
 , url ? credentials.url
 #  Name of the timetable owner (string)
 , name ? credentials.name
+# sha256 of the fetched timetable
+, timetable-sha256 ? "0000000000000000000000000000000000000000000000000000"
 }:
 let
   pronote-timetable-fetcher = callPackage ./fetchers/pronote-timetable-fetcher {
@@ -50,7 +52,7 @@ let
   };
   timetable = pronote-timetable-fetcher {
     inherit datesWeekA datesWeekB username password url;
-    sha256 = "196xmsvkqq5kyqwx6nna4dcra487ra5bvjn3q9080hzlsfndk0h4";
+    sha256 = timetable-sha256;
   };
   extraAgendas = {
     "${lib.toLower name}" = "${timetable}";

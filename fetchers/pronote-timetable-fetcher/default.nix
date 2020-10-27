@@ -47,9 +47,9 @@ stdenvNoCC.mkDerivation {
 
   # New-style output content requirements.
   outputHashAlgo = if outputHashAlgo != "" then outputHashAlgo else
-      if sha512 != "" then "sha512" else if sha256 != "" then "sha256" else if sha1 != "" then "sha1" else "md5";
+      if sha512 != "" then "sha512" else if sha256 != "" then "sha256" else if sha1 != "" then "sha1" else if md5 != "" then "md5" else "sha256";
   outputHash = if outputHash != "" then outputHash else
-      if sha512 != "" then sha512 else if sha256 != "" then sha256 else if sha1 != "" then sha1 else md5;
+      if sha512 != "" then sha512 else if sha256 != "" then sha256 else if sha1 != "" then sha1 else if md5 != "" then md5 else "";
   outputHashMode = "recursive";
 
   name =
