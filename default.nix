@@ -45,6 +45,14 @@ in
 , name ? credentials.name
 # sha256 of the fetched timetable
 , timetable-sha256 ? "0000000000000000000000000000000000000000000000000000"
+
+, buildBinpack ? false
+, buildDebug ? false
+, buildDoc ? true
+, buildSimulator ? true
+, buildWithCCache ? false
+, numworks_model ? "n0110"
+, owner_name
 }:
 let
   pronote-timetable-fetcher = callPackage ./fetchers/pronote-timetable-fetcher {
@@ -58,11 +66,7 @@ let
     "${lib.toLower name}" = "${timetable}";
   };
   omega = callPackage ./omega {
-    buildSimulator = true;
-    buildBinpack = false;
-    buildDebug = false;
-    buildDoc = false;
-    owner_name = "Scott Hamilton";
+    inherit buildWithCCache buildSimulator buildBinpack buildDebug buildDoc owner_name;
     extraAgendas = lib.concatStringsSep " " (lib.mapAttrsToList (name: value: name+"@"+value) extraAgendas);
   };
 in
